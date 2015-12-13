@@ -1,3 +1,6 @@
+@namespace url(http://www.w3.org/1999/xhtml);
+
+@-moz-document domain("boards.4chan.org") {
 /* general */
 
 * {
@@ -5,16 +8,20 @@
     font-size: 14px;
     line-height: 20px;
 }
+
 #header-bar.dialog {
-    background-size: cover !important;
-    background-position: center 60% !important;
-    height: 75px;
-    background-image: url('http://i.imgur.com/0FlBQ7c.jpg') !important;
+    vertical-align: bottom !important;
+    /*background-size: cover !important;*/
+    background-repeat: repeat-x;
+    /*background-position: center 60% !important;*/
+    height: 7%;
+    /*background-image: url('http://i.imgur.com/0FlBQ7c.jpg') !important;*/
+    background-image: url('http://i.imgur.com/3Nxo1BI.png') !important;
     position: fixed !important;
 }
 body {
     padding-top: 50px !important;
-    background: #F7F7F7!important;
+    background-color: #F7F7F7!important;
     color: #454545;
     background-image: url('http://i.imgur.com/ot0vcRW.png')!important;
     background-position: right bottom!important;
@@ -23,18 +30,32 @@ body {
     background-size: 33%!important;
     z-index: -1;
 }
-.boardTitle,
+    
+    #fourchanx-settings.dialog,
+    .suboption-list{
+        background: #ffffff !important;
+    }
+    
 hr,
-#togglePostFormLink,
 td,
-#bannerCnt,
-#absbot.absBotText,
-#footer-links,
-.bottomCtrl.desktop,
-#board-list,
-#shortcuts {
+    .boardBanner,
+    #update-timer,
+    #thread-stats,
+    a.hide-reply-button,
+    #absbot.absBotText
+    {
     display: none!important;
 }
+ a.settings-link.fa.fa-wrench::before{   
+    content: "設定" !important;
+     color: #ffffff !important;
+     font-family: "Noto Sans CJK JP";
+ }
+    
+    a.current {
+        font-size: 300%;
+    }
+    
 a:link,
 a.linkify:link,
 a.quotelink:link {
@@ -81,18 +102,24 @@ a.quotelink:link:hover {
     text-align: right;
 }
 .thread {
-    padding-left: 100px;
-    padding-right: 50px;
+    padding: 0px 50px 0px 0px;
 }
+        .post.op{
+        overflow: hidden !important;
+    }
 .reply,
 .replyhl,
 #post-reply {
+    color: #494949 !important;
     border-radius: 5px;
-    padding: 5px 5px 5px 5px !important;
+    padding: 5px 10px 5px 10px !important;
     width: 650px;
     height: auto;
     background: #ffffff !important;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
 }
 .quote {
     color: #B7CE7D !important;
+}
+ 
 }
