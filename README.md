@@ -5,14 +5,13 @@ A messy userstyle for 4chan, made mostly to help me learn HTML and CSS.
 
 ### preview
 
-![screncap](https://raw.githubusercontent.com/jastronaut/4ch-css/master/screen.png)
+![screncap](http://www.gfycat.com/MediocreElementaryFanworms)
 
 ### notes
 
-I've only tested this out on Chromium. (I usually use Firefox, not sure why I didn't use it earlier lol.) If it does not work, I'd love to work on a Firefox fork in the future.
+I'm new to CSS.
 
 ### todo
 
 - clean up formatting
-- test on firefox
 - adjust color palette to match bottom image
