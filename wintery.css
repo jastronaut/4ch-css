@@ -1,60 +1,88 @@
+/*
+** 4chin css by jastronaut
+*/
+
 @namespace url(http://www.w3.org/1999/xhtml);
 
 @-moz-document domain("boards.4chan.org") {
-/* general */
 
+/*** general ***/
 * {
     font-family: SFNS Display;
     font-size: 14px;
     line-height: 20px;
 }
 
+/* header image */
 #header-bar.dialog {
     vertical-align: bottom !important;
-    /*background-size: cover !important;*/
-    background-repeat: repeat-x;
-    /*background-position: center 60% !important;*/
     height: 7%;
-    /*background-image: url('http://i.imgur.com/0FlBQ7c.jpg') !important;*/
-    background-image: url('http://i.imgur.com/3Nxo1BI.png') !important;
-    position: fixed !important;
+    /* stuff for non-tiling header image */
+    background-size: cover !important;
+    background-image: url('http://i.imgur.com/1mm570P.png') !important;
+    background-position: center 60% !important;
 }
+
 body {
     padding-top: 50px !important;
     background-color: #F7F7F7!important;
     color: #454545;
-    background-image: url('http://i.imgur.com/ot0vcRW.png')!important;
-    background-position: right bottom!important;
+    background-image: url('http://i.imgur.com/ot0vcRW.png'), url('https://media.giphy.com/media/SkhAAFxWRtnjy/giphy.gif'), url('https://media.giphy.com/media/nsubBvX6ZQPqU/giphy.gif') !important;
+    background-position: right bottom, left bottom !important;
     background-attachment: fixed!important;
-    background-repeat: no-repeat!important;
-    background-size: 33%!important;
+    background-repeat: no-repeat, no-repeat, repeat !important;
+    background-size: 33%, 20% !important;
     z-index: -1;
 }
     
-    #fourchanx-settings.dialog,
-    .suboption-list{
-        background: #ffffff !important;
-    }
+#fourchanx-settings.dialog,
+.suboption-list {
+    background: #ffffff !important;
+}
     
+#delform {
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
 hr,
 td,
-    .boardBanner,
-    #update-timer,
-    #thread-stats,
-    a.hide-reply-button,
-    #absbot.absBotText
-    {
+.boardBanner,
+#update-timer,
+#thread-stats,
+a.hide-reply-button,
+#absbot.absBotText,
+.qr-link-container,
+#togglePostFormLink.desktop {
     display: none!important;
 }
- a.settings-link.fa.fa-wrench::before{   
-    content: "設定" !important;
-     color: #ffffff !important;
-     font-family: "Noto Sans CJK JP";
- }
     
-    a.current {
-        font-size: 300%;
-    }
+#shortcuts {
+    position: fixed;
+    top: 15px !important;
+    right: 5px !important;
+}
+
+a.settings-link.fa.fa-wrench::before{   
+   content: "設定" !important;
+   color: #ffffff !important;
+   font-family: "Noto Sans CJK JP";
+   font-weight: 900;
+}
+    
+a.current {
+    top: 15px !important;
+    left: 10px !important;
+    color: #ffffff !important;
+    font-size: 300% !important;
+    font-family: "Noto Sans CJK JP";
+}
+    
+.yotsuba-b:root #board-list a {
+    top: 5px;
+    color: #ffffff !important;
+    font-family: "Noto Sans CJK JP";
+}
     
 a:link,
 a.linkify:link,
@@ -66,58 +94,69 @@ a.quotelink:link {
     text-decoration: none;
     color: #5A7B8A !important;
 }
+
 a.linkify:link:hover,
 a.quotelink:link:hover {
     background-color: #5A7B8A !important;
     color: #FCF3E8 !important;
 }
+
 /* catalog */
 
-#delform {
-    padding-left: 100px;
-    padding-right: 100px;
-}
 .catalog-thread {
     background: #ffffff;
     border-radius: 5px;
     width: auto;
     padding: 5px 5px 5px 5px;
 }
-/* thread */
 
+/*** thread stuff ***/
 .subject {
     color: #5A7B8A !important;
 }
+
 .name {
     color: #A0BBB6 !important;
 }
+
 .pages a,
 .summary,
 .dateTime,
 .file-info {
     color: #a6a6a6 !important;
 }
+
 .navLinks {
-    padding: 40px 50px 3px 0px;
+    background-image: url('https://media.giphy.com/media/uxVzvXoBZLNx6/giphy.gif') !important;
+    background-size: auto !important;
+    background-repeat: repeat-x; 
+    padding: 50px 0px 3px 0px;
     text-align: right;
 }
+
 .thread {
     padding: 0px 50px 0px 0px;
 }
-        .post.op{
-        overflow: hidden !important;
-    }
+
+.post.op{
+    overflow: hidden !important;
+    background-image: url('https://media.giphy.com/media/pkXLdrjSQNt1m/giphy.gif') !important;
+    background-repeat: no-repeat;
+    background-position: 60% bottom;
+}
+
 .reply,
 .replyhl,
 #post-reply {
     color: #494949 !important;
-    border-radius: 5px;
-    padding: 5px 10px 5px 10px !important;
-    width: 650px;
-    height: auto;
     background: #ffffff !important;
     box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    width: 650px;
+    height: auto;
+    padding: 5px 10px 5px 10px !important;
 }
+
 .quote {
     color: #B7CE7D !important;
 }
