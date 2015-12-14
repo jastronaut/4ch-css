@@ -4,8 +4,8 @@
 A messy userstyle for 4chan, made mostly to help me learn HTML and CSS.
 
 ### preview
-
-[gfycat](hfttp://www.gfycat.com/MediocreElementaryFanworms)
+markdown hates me.
+hfttp://www.gfycat.com/MediocreElementaryFanworms
 
 ### notes
 
