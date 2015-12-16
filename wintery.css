@@ -14,23 +14,23 @@
 }
 
 /* header image */
-#header-bar.dialog {
-    vertical-align: bottom !important;
+.yotsuba-b:root #header-bar.dialog, .yotsuba-b:root #notifications {
+    background-color: #B9CFC9 !important;
     height: 7%;
     /* stuff for non-tiling header image */
-    background-size: cover !important;
-    background-image: url('http://i.imgur.com/1mm570P.png') !important;
-    background-position: center 60% !important;
+    /*background-size: cover !important;*/
+    /*background-image: url('http://i.imgur.com/1mm570P.png') !important;*/
+    /*background-position: center 60% !important;*/
 }
 
 body {
     padding-top: 50px !important;
     background-color: #F7F7F7!important;
     color: #454545;
-    background-image: url('http://i.imgur.com/ot0vcRW.png'), url('https://media.giphy.com/media/SkhAAFxWRtnjy/giphy.gif'), url('https://media.giphy.com/media/nsubBvX6ZQPqU/giphy.gif') !important;
+    background-image: url('http://i.imgur.com/ot0vcRW.png'), url('https://media.giphy.com/media/SkhAAFxWRtnjy/giphy.gif') !important;
     background-position: right bottom, left bottom !important;
     background-attachment: fixed!important;
-    background-repeat: no-repeat, no-repeat, repeat !important;
+    background-repeat: no-repeat, no-repeat !important;
     background-size: 33%, 20% !important;
     z-index: -1;
 }
