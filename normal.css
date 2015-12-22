@@ -111,12 +111,14 @@
         font-size: 100%;
         text-transform: lowercase;
         position: fixed !important;
-        bottom: 5% !important;
-        right: 5% !important;
+        bottom: 3% !important;
+        right: 3% !important;
         background-color: #e094a1 !important;
         border: 2px solid #e094a1 !important;
         border-radius: 2px 2px 2px 2px !important;
         padding: 5px 5px 5px 5px !important;
+        z-index: 1 !important;
+        box-shadow: 2px 2px 2px #A7ADBA !important;
     }
   
     #togglePostFormLink > a {
