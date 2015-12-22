@@ -1,17 +1,17 @@
 # 4ch-css
 
-*wintery chan*
-A messy userstyle for 4chan, made mostly to help me learn HTML and CSS.
+![preview](https://raw.githubusercontent.com/jastronaut/4ch-css/master/previews/normal_thread.png)
 
-### preview
-markdown hates me.
-hfttp://www.gfycat.com/MediocreElementaryFanworms
+i wanted to learn css, so i started making 4chan styles as practice.
 
-### notes
+### contents
 
-I'm new to CSS.
+there are two styles in this repo:
 
-### todo
+- **wintery.css**, a christmassy style complete with a floating waifu and christmas gifs
+- **normal.css**, a much more toned down style. pictured above.
 
-- clean up formatting
-- adjust color palette to match bottom image
+## TODO
+
+- clean up files
+- make up an actual title for normal.css
