@@ -1,0 +1,167 @@
+/*
+** 4chin css by jastronaut
+** simple white edition
+*/
+
+@namespace url(http://www.w3.org/1999/xhtml);
+@-moz-document domain("boards.4chan.org") {
+  
+  /* default fonts */
+    * {
+        font-family: SFNS Display;
+        /*line-height: 20px;*/
+    }
+  
+  /* hiding */
+    .boardBanner,
+    hr,
+    #blotter,
+    #thread-stats,
+    #update-timer,
+    .sideArrows,
+    div.reply input,
+    #absbot.absBotText,
+    .bottomCtrl {
+        display: none !important;
+    }
+  
+    body {
+        background-color: #ffffff !important;
+        background-image: none !important;
+    }
+  
+    .thread {
+        padding: 0 20px 0 20px !important;
+    }
+  
+  /* index, catalog, bottom links */
+    .navLinks,
+    .navLinks.desktop {
+        background-color: #ffffff !important;
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+        color: #A7ADBA !important;
+    }
+  
+    .navLinks > a {
+        color: #9e9e9e !important;
+    }
+  
+  /* reply boxes */
+    .reply {
+        background-color: #ffffff !important;
+        padding: 20px 20px 20px 20px !important;
+        border-style: solid none none none !important;
+        border-width: 1px 0 0 0 !important;
+        border-color: #DFE1E8 !important;
+    }
+  
+    .opContainer,
+    .op,
+    .post {
+        background-color: #ffffff !important;
+        color: #606060;
+        overflow: hidden !important;
+    }
+  
+    div.post div.postInfo span.subject {
+      color: #000000 !important;
+    }
+  
+  /* change maymay arrow colors */
+    blockquote > span.quote {
+        color: #A3BE8C !important;
+    }
+  
+  /* animate link hover */
+    .postMessage > a {
+        transition: all ease-in-out 0.25s;
+        color: #e094a1 !important;
+    }
+    .postMessage > a:hover {
+        transition: all ease-in-out 0.5s;
+        background-color: #e094a1 !important;
+        color: #ffffff !important;
+    }
+  
+    .quoteLink,
+    .quotelink,
+    .deadlink,
+    span.container > a.backlink {
+        color: #e094a1 !important;
+    }
+  
+    div.post div.postInfo span.nameBlock span.name {
+        color: #000000 !important;
+    }
+  
+    span.dateTime,
+    span.file-info > a,
+    a.sauce {
+        color: #65737E !important;
+    }
+  
+  /* reply button */
+    #togglePostFormLink {
+        color: #ffffff !important;
+        font-size: 100%;
+        text-transform: lowercase;
+        position: fixed !important;
+        bottom: 5% !important;
+        right: 5% !important;
+        background-color: #e094a1 !important;
+        border: 2px solid #e094a1 !important;
+        border-radius: 2px 2px 2px 2px !important;
+        padding: 5px 5px 5px 5px !important;
+    }
+  
+    #togglePostFormLink > a {
+        color: #ffffff !important;
+    }
+  
+  /* reply menu */
+    table.postForm > tbody > tr > td:first-child {
+        background-color: #e094a1 !important;
+        border: none !important;
+        text-align: center !important;
+    }
+  
+  /* 4chan-x stuff */
+    .yotsuba-b:root .focused.entry {
+        background: #e094a1 !important;
+        border: none !important;
+        color: #ffffff !important;
+    }
+  
+    .yotsuba-b:root .dialog,
+    .yotsuba-b:root .suboption-list > div:last-of-type {
+        background-color: #ffffff !important;
+    }
+  
+    .section-main label {
+        text-decoration: none !important;
+        color: #e094a1 !important;
+    }
+  
+    span.description {
+        color: #606060;
+    }
+  
+    .yotsuba-b:root #fourchanx-settings fieldset,
+    .yotsuba-b:root .section-main div::before {
+        border-color: #e094a1 !important;
+    }
+  
+    .yotsuba-b:root #header-bar.dialog {
+        background-color: #ffffff !important;
+        color: #000000 !important;
+    }
+  
+    .fixed:root #header-bar {
+        box-shadow: none !important;
+    }
+  
+    .yotsuba-b:root .entry {
+        color: #000000 !important;
+    }
+}
