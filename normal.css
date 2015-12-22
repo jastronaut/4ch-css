@@ -1,8 +1,3 @@
-/*
-** 4chin css by jastronaut
-** simple white edition
-*/
-
 @namespace url(http://www.w3.org/1999/xhtml);
 @-moz-document domain("boards.4chan.org") {
   
@@ -32,6 +27,15 @@
   
     .thread {
         padding: 0 20px 0 20px !important;
+    }
+    
+  /* catalog stuff */
+    .catalog-mode:root .board {
+        padding-top: 15px !important;
+    }
+    
+    .catalog-thread > .comment {
+        padding: 10px 3px 10px 3px !important;
     }
   
   /* index, catalog, bottom links */
