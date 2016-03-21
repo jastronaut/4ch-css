@@ -1,21 +1,12 @@
 @namespace url(http://www.w3.org/1999/xhtml);
 @-moz-document domain("boards.4chan.org") {
-
 	*
 	{
 		font-family: 'Fantasque Sans Mono';
 	}
 
 	/* hiding */
-	.boardBanner,
-	hr,
-	#blotter,
-	#thread-stats,
-	#update-timer,
-	.sideArrows,
-	div.reply input,
-	#absbot.absBotText,
-	.bottomCtrl
+	.boardBanner, hr, #blotter, #thread-stats, #update-timer, .sideArrows, div.reply input, #absbot.absBotText, .bottomCtrl
 	{
 		display: none !important;
 	}
@@ -73,9 +64,7 @@
 		border-color: #DFE1E8 !important;
 	}
 
-	.opContainer,
-	.op,
-	.post
+	.opContainer, .op, .post
 	{
 		background-color: #515151 !important;
 		color: #e8e6df;
@@ -94,7 +83,7 @@
 	}
 
 	/* animate link hover */
-	.postMessage > a, a, a:visited, a.backlink, a.quotelink, .backlink.deadlink
+	.postMessage > a,a, a:visited, a.backlink, a.quotelink, .backlink.deadlink
 	{
 		transition: all ease-in-out 0.25s;
 		color: #c59799 !important;
@@ -123,9 +112,7 @@
 		color: #99CC99 !important;
 	}
 
-	span.dateTime,
-	span.file-info > a,
-	a.sauce
+	span.dateTime, span.file-info > a, a.sauce
 	{
 		color: #D3D0C8 !important;
 	}
@@ -168,8 +155,7 @@
 		color: #ffffff !important;
 	}
 
-	.dialog,
-	.suboption-list > div:last-of-type
+	.dialog, .suboption-list > div:last-of-type
 	{
 		background-color: #ffffff !important;
 	}
@@ -185,8 +171,7 @@
 		color: #606060;
 	}
 
-	#fourchanx-settings fieldset,
-	.section-main div::before
+	#fourchanx-settings fieldset, .section-main div::before
 	{
 		border-color: #c59799 !important;
 	}
